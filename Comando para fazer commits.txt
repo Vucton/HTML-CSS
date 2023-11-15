@@ -1,0 +1,15 @@
+git init 
+
+git status // para ver os arquivos pendentes
+
+git add . // para adicionar todos os arquivos
+git add * // para adicionar todos arquivos atualizado ou alterados
+git add "" // para adicionar arquivo especifico
+
+git commit -m "" // para colocar msg do arquivo que vai ser enviado
+
+git branch -M main // renomear e a master para main (é importante fazer isso)
+
+git remote add origin <url do seu repositorio do git> // adicionar o enderco para onde quer enviar seu commit
+
+git push -u origin main // Fazer o commit /enviar os arquivos para o git 
