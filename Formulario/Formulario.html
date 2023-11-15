@@ -3,42 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/CSS" href="Formulario.css" media="screen">
     <title>Cadastro</title>
 </head>
 <body>
     <!--Titulo da pagina -->
-    <div>
-        <h1>Cadastro de DEVs</h1>
-        <p>Complete suas informações</p>
+    <div class="campo">
+        <h1 id="titulo">Cadastro de DEVs</h1><br>
+        <p id="subtitulo">Complete suas informações</p>
         <br> <!--pular de linha -->
     </div>
 
     <!-- inicio do formulario -->
     <form>
         <!-- Caixa com os campos nome e sobrenome -->
-        <fieldset> <!--é um agrupador de campos-->
-            <div>
-                <label>Nome</label>
-                <input type="text" name="nome" id="nome">
+        <fieldset class="grupo"> <!--é um agrupador de campos-->
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
             </div>
 
-            <div>
-                <label>Sobrenome</label>
-                <input type="text" name="Sobrenome" id="Sobrenome">
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="Sobrenome" required>
             </div>
 
         </fieldset>
         <br><!--pular uma linha-->
 
         <!-- div é tipo um gaveta | campo email -->
-        <div>
-            <label>Email</label>
-            <input type="email" name="email" id="email">
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
         </div>
 
             <!-- Alternativas -->
-        <div>
-            <label>De qual lado aplicação você desenvolve?</label>
+        <div class="campo">
+            <label><strong>De qual lado aplicação você desenvolve?</strong></label><br><br>
             <label>
                 <input type="radio" name="devweb" value="frontend">Front-end
             </label>
@@ -50,9 +51,9 @@
             </label>
         </div>
 
-        <div>
-            <label>Senioridade</label>
-            <select id="Senioridade">
+        <div class="campo">
+            <label for="senioridade"><strong>Senioridade</strong></label>
+            <select id="senioridade">
                 <option selected disabled value="">Selecione</option>
                 <option>Junior</option>
                 <option>Plenor</option>
@@ -60,9 +61,9 @@
             </select>
         </div>
 
-        <fieldset>
-            <div>
-                <label>Selecione as tecnologia que utiliza:</label><br><br>
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione as tecnologia que utiliza:</strong></label><br><br>
                 <input type="checkbox" id="tecnologia1" value="HTML">
                 <label for="tecnologia1">HTML</label>
 
@@ -87,12 +88,13 @@
             </div>
         </fieldset>
 
-        <div>
+        <div class="campo">
             <br>
-            <label>Conte um pouco da sua Experiência</label>
+            <label><strong>Conte um pouco da sua Experiência</strong></label>
             <textarea rows="6" style="width: 26em;" id="experiencia" name="experiencia"></textarea>
         </div>
-        <button type="submit">Concluido</button>
+        <button class="botao" type="submit">Concluido</button>        
+        
 
     </form>
 </body>
