@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <!--Titulo da pagina -->
+    <div>
+        <h1>Cadastro de DEVs</h1>
+        <p>Complete suas informações</p>
+        <br> <!--pular de linha -->
+    </div>
+
+    <!-- inicio do formulario -->
+    <form>
+        <!-- Caixa com os campos nome e sobrenome -->
+        <fieldset> <!--é um agrupador de campos-->
+            <div>
+                <label>Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div>
+                <label>Sobrenome</label>
+                <input type="text" name="Sobrenome" id="Sobrenome">
+            </div>
+
+        </fieldset>
+        <br><!--pular uma linha-->
+
+        <!-- div é tipo um gaveta | campo email -->
+        <div>
+            <label>Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+            <!-- Alternativas -->
+        <div>
+            <label>De qual da aplicação você desenvolve?</label>
+            <label>
+                <input type="radio" name="devweb" value="frontend">Front-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Back-end
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack" checked>Fullstack
+            </label>
+        </div>
+
+        <div>
+            <label>Senioridade</label>
+            <select id="Senioridade">
+                <option>Junior</option>
+                <option>Plenor</option>
+                <option>Senior</option>
+            </select>
+        </div>
+
+
+    </form>
+</body>
+</html>
